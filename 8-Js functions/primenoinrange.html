@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<center>
+<body bgcolor="pink">
+<h1>Prime nos with in an interval</h1>
+<script>
+document.write("click here for  to get prime numbers between a range:")
+function prime()
+{
+beg=prompt("Enter the begining number:");
+end=prompt("Enter the ending number");
+document.write("Prime numbers between "+beg +" to "+end+" are:"+"<br/>")
+for (i =beg;i <=end;i++)
+{
+c=0;
+for ( j = 2; j < i; j++) 
+{
+if (i % j == 0) 
+{
+c = 1;
+break;
+}
+} 
+if (i > 1 && c==0) 
+{
+document.write(i+"<br>");
+}
+}
+}
+</script>
+<form>
+<input type="button" value="click here" onclick="prime()">
+</form>
+</body>
+</center>
+</html>
+
